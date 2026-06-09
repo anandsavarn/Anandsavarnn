@@ -15,5 +15,7 @@ export const jobRoles = [
   "Business Analyst",
   "Investment Data Analyst",
   "Risk Analyst",
-  "Market Research Analyst"
+  "Market Research Analyst",
+  "International Finance Management",
+  "International Business Management"
 ];

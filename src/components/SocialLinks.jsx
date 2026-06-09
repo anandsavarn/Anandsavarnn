@@ -1,89 +1,165 @@
+import { motion } from "framer-motion";
+import { 
+  Mail, 
+  Code, 
+  Terminal, 
+  ShieldCheck, 
+  Share2
+} from "lucide-react";
+import { cn } from "../lib/utils";
+
+// Custom SVG Icons for brands
+const GithubIcon = ({ size = 24, ...props }) => (
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    width={size} 
+    height={size} 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    stroke="currentColor" 
+    strokeWidth="2" 
+    strokeLinecap="round" 
+    strokeLinejoin="round" 
+    {...props}
+  >
+    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+    <path d="M9 18c-4.51 2-5-2-7-2" />
+  </svg>
+);
+
+const LinkedinIcon = ({ size = 24, ...props }) => (
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    width={size} 
+    height={size} 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    stroke="currentColor" 
+    strokeWidth="2" 
+    strokeLinecap="round" 
+    strokeLinejoin="round" 
+    {...props}
+  >
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+    <rect width="4" height="12" x="2" y="9" />
+    <circle cx="4" cy="4" r="2" />
+  </svg>
+);
+
 const links = [
   {
     name: "Email",
-    href: "mailto:anandsavarn@gmail.com",
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-      </svg>
-    ),
+    href: "https://mail.google.com/mail/?view=cm&to=anandsavarn@gmail.com",
+    icon: Mail,
+    color: "group-hover:text-red-400",
+    bg: "group-hover:bg-red-400/10",
   },
   {
     name: "GitHub",
-    href: "https://github.com/Anandsavran",
-    icon: (
-      <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-        <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd"/>
-      </svg>
-    ),
-  },
-  {
-    name: "LeetCode",
-    href: "https://leetcode.com/u/anandsavarn/",
-    icon: (
-      <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M13.483 0a1.374 1.374 0 0 0-.961.435L.44 17.482a1.298 1.298 0 0 0 0 1.966l11.082 17.006a1.374 1.374 0 0 0 1.963 0l11.082-17.006a1.298 1.298 0 0 0 0-1.966L14.445.435a1.374 1.374 0 0 0-.962-.435zM8.852 6.801h2.736l1.61 3.285 1.383-3.285h2.652l-2.756 5.486v3.598h-2.672V12.29L8.852 6.801z"/>
-      </svg>
-    ),
+    href: "https://github.com/anandsavarn",
+    icon: GithubIcon,
+    color: "group-hover:text-white",
+    bg: "group-hover:bg-white/10",
   },
   {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/anandsavarn/",
-    icon: (
-      <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-      </svg>
-    ),
+    icon: LinkedinIcon,
+    color: "group-hover:text-blue-400",
+    bg: "group-hover:bg-blue-400/10",
+  },
+  {
+    name: "LeetCode",
+    href: "https://leetcode.com/u/anandsavarn/",
+    icon: Code,
+    color: "group-hover:text-orange-400",
+    bg: "group-hover:bg-orange-400/10",
   },
   {
     name: "HackerRank",
     href: "https://www.hackerrank.com/profile/anandsavarn",
-    icon: (
-      <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M12 0c.8 0 1.5.7 1.5 1.5v21c0 .8-.7 1.5-1.5 1.5s-1.5-.7-1.5-1.5v-21c0-.8.7-1.5 1.5-1.5zm-4.5 6H3v12h4.5V6zm9 0v12H21V6h-4.5zM21 3h-4.5v1.5H21V3zm-4.5 18H21v-1.5h-4.5V21zM3 21h4.5v-1.5H3V21zM3 3v1.5h4.5V3H3z"/>
-      </svg>
-    ),
-  },
-  {
-    name: "HackerEarth",
-    href: "https://www.hackerearth.com/",
-    icon: (
-      <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M18.447 20.936H5.553a.5.5 0 01-.447-.447V3.511a.5.5 0 01.447-.447h12.894a.5.5 0 01.447.447v17.978a.5.5 0 01-.447.447zM6 20h11V4H6v16z"/>
-      </svg>
-    ),
+    icon: Terminal,
+    color: "group-hover:text-green-400",
+    bg: "group-hover:bg-green-400/10",
   },
   {
     name: "CodeChef",
     href: "https://www.codechef.com/users/anand_savarn",
-    icon: (
-      <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.18l7.5 3.75v7.5L12 18.82l-7.5-3.75v-7.5L12 4.18z"/>
-      </svg>
-    ),
+    icon: ShieldCheck,
+    color: "group-hover:text-amber-600",
+    bg: "group-hover:bg-amber-600/10",
   },
 ];
 
 export default function SocialLinks() {
   return (
-    <section id="links" className="py-16 px-6">
-      <div className="max-w-screen-2xl mx-auto w-full">
-        <h2 className="text-3xl md:text-4xl font-mono font-semibold text-code-green mb-2">
-          Find me on
-        </h2>
-        <p className="text-gray-400 mb-12 text-base">Connect and explore my profiles</p>
-        <div className="flex flex-wrap gap-4 md:gap-6">
-          {links.map(({ name, href, icon }) => (
-            <a
-              key={name}
-              href={href}
+    <section id="links" className="py-24 px-6 relative overflow-hidden bg-grid">
+      <div className="max-w-7xl mx-auto z-10 relative">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div>
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="flex items-center gap-3 mb-4"
+            >
+              <div className="p-2 rounded-lg bg-code-green/10 border border-code-green/20">
+                <Share2 className="text-code-green" size={20} />
+              </div>
+              <span className="text-code-green font-mono text-sm uppercase tracking-widest">Connect</span>
+            </motion.div>
+            
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-4xl md:text-6xl font-bold text-white"
+            >
+              Digital <span className="text-gradient-green">Footprint</span>
+            </motion.h2>
+          </div>
+          
+          <motion.p 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="text-gray-400 max-w-md text-lg md:text-right"
+          >
+            Explore my profiles across various platforms and let's build something amazing together.
+          </motion.p>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          {links.map((link, i) => (
+            <motion.a
+              key={link.name}
+              href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center gap-1.5 w-24 py-4 rounded-xl bg-code-surface border border-code-border hover:border-code-green/50 hover:text-code-green transition text-gray-400"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
+              whileHover={{ y: -5 }}
+              className={cn(
+                "group relative p-6 glass-card border-white/5 transition-all duration-300 flex flex-col items-center justify-center gap-4 text-center overflow-hidden",
+                link.bg
+              )}
             >
-              {icon}
-              <span className="font-mono text-xs">{name}</span>
-            </a>
+              <div className={cn("p-4 rounded-2xl bg-white/5 border border-white/10 transition-all duration-300", link.color)}>
+                <link.icon size={28} />
+              </div>
+              
+              <div className="space-y-1">
+                <h3 className="text-white font-bold text-sm tracking-tight">{link.name}</h3>
+                <p className="text-[10px] font-mono text-gray-500 uppercase tracking-widest">Visit Profile</p>
+              </div>
+
+              {/* Decorative background element */}
+              <div className="absolute -bottom-4 -right-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                <link.icon size={80} />
+              </div>
+            </motion.a>
           ))}
         </div>
       </div>

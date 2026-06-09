@@ -11,6 +11,7 @@ export default {
         sans: ['Outfit', 'sans-serif'],
       },
       colors: {
+        foreground: '#e6edf3',
         code: {
           bg: '#0d1117',
           surface: '#161b22',

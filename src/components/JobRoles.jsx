@@ -1,41 +1,86 @@
+import { motion } from "framer-motion";
+import { Briefcase, Target, ArrowRight } from "lucide-react";
 import { jobRoles } from "../data/jobRoles";
+import { cn } from "../lib/utils";
 
 export default function JobRoles() {
   return (
-    <section id="roles" className="py-16 px-6 relative border-t border-code-border/30">
-      <div className="max-w-screen-2xl mx-auto w-full">
-        <h2 className="text-3xl md:text-4xl font-mono font-bold text-white mb-6">
-          Target_roles
-        </h2>
-        <p className="text-gray-400 mb-12 font-mono text-base">
-          Roles I am actively targeting and exploring in my career journey.
-        </p>
-
-        <div className="relative w-full">
-          {/* Subtle gradient edges for better scroll UI */}
-          <div className="absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-code-bg to-transparent z-10 pointer-events-none"></div>
-          <div className="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-code-bg to-transparent z-10 pointer-events-none"></div>
-
-          <div className="flex overflow-x-auto gap-4 pb-8 pt-4 px-4 snap-x snap-mandatory hide-scrollbar" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
-            <style>
-              {`
-                .hide-scrollbar::-webkit-scrollbar {
-                  display: none;
-                }
-              `}
-            </style>
-            {jobRoles.map((role, index) => (
-              <div
-                key={index}
-                className="snap-start whitespace-nowrap flex-shrink-0 px-6 py-4 rounded-xl bg-code-surface/40 hover:bg-code-surface border border-code-border/50 hover:border-code-green/50 hover:shadow-[0_0_20px_rgba(34,197,94,0.1)] hover:-translate-y-1 transition-all duration-300 font-sans font-semibold text-gray-300 hover:text-white cursor-default group"
-              >
-                <span className="text-code-green/50 group-hover:text-code-green mr-2 transition-colors">#</span>
-                {role}
+    <section id="roles" className="py-24 px-6 relative overflow-hidden bg-grid">
+      <div className="max-w-7xl mx-auto z-10 relative">
+        <div className="flex flex-col md:flex-row items-center justify-between mb-16 gap-8">
+          <div className="text-center md:text-left">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              className="inline-flex items-center gap-3 mb-4"
+            >
+              <div className="p-2 rounded-lg bg-code-green/10 border border-code-green/20">
+                <Target className="text-code-green" size={20} />
               </div>
-            ))}
+              <span className="text-code-green font-mono text-sm uppercase tracking-widest">Future</span>
+            </motion.div>
+            
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-4xl md:text-6xl font-bold text-white"
+            >
+              Target <span className="text-gradient-green">Careers</span>
+            </motion.h2>
           </div>
+          
+          <motion.div 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="flex-shrink-0"
+          >
+            <div className="p-6 glass-card border-white/5 flex items-center gap-6">
+              <div className="h-12 w-12 rounded-full bg-code-green/20 flex items-center justify-center">
+                <Briefcase className="text-code-green" size={24} />
+              </div>
+              <div>
+                <p className="text-white font-bold">Actively Seeking</p>
+                <p className="text-xs text-gray-500 font-mono uppercase tracking-tighter">Full-time & Internship Opportunities</p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+
+        <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+          {jobRoles.map((role, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, scale: 0.9, y: 20 }}
+              whileInView={{ opacity: 1, scale: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.05, type: "spring" }}
+              whileHover={{ 
+                scale: 1.05,
+                y: -5,
+                boxShadow: "0 20px 25px -5px rgba(63, 185, 80, 0.1), 0 10px 10px -5px rgba(63, 185, 80, 0.04)"
+              }}
+              className="group relative px-8 py-5 glass-card border-white/5 hover:border-code-green/40 transition-all duration-300 cursor-default"
+            >
+              <div className="flex items-center gap-4">
+                <div className="w-2 h-2 rounded-full bg-code-green opacity-40 group-hover:opacity-100 group-hover:scale-125 transition-all" />
+                <span className="text-white font-bold tracking-tight text-lg group-hover:text-code-green transition-colors font-sans">
+                  {role}
+                </span>
+                <ArrowRight size={16} className="text-gray-600 group-hover:text-code-green transition-all transform group-hover:translate-x-2" />
+              </div>
+              
+              {/* Background Glow */}
+              <div className="absolute inset-0 bg-code-green/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl" />
+            </motion.div>
+          ))}
         </div>
       </div>
+      
+      {/* Background Decorative Element */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-code-green/5 rounded-full blur-[120px] -z-10" />
     </section>
   );
 }

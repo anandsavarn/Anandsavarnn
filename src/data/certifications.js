@@ -5,7 +5,7 @@ export const certifications = [
     institution: "LPU (Lovely Professional University)",
     date: "Jun - Jul' 25",
     details: "Hands-on Android development with real projects and Play Store deployment. Summer training in mobile apps.",
-    certificateUrl: "https://www.linkedin.com/posts/anandsavarn_androiddevelopment-mobileapps-summertraining-activity-7366189520121159681-mevM",
+    certificateUrl: "https://drive.google.com/file/d/1vn43P0a395aXy6fmJ83D_ZGeJztxZVVq/view?usp=drive_link",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const certifications = [
     institution: "The Hong Kong University of Science and Technology (Coursera)",
     date: "May 11, 2024",
     details: "Online non-credit course on implementation and testing. Skills: Unit Testing, Integration Testing, Agile, SDLC, Debugging, Requirements Analysis.",
-    certificateUrl: "https://coursera.org/verify/YZSJRLMLFQKN",
+    certificateUrl: "https://drive.google.com/file/d/1QwMGp8s0DrAEiyVcq_brmJQmW8OI9UwS/view?usp=drive_link",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const certifications = [
     institution: "Universitat Autònoma de Barcelona (Coursera)",
     date: "Sep 25, 2024",
     details: "Online non-credit course on digital systems from logic gates to processors. ~40 hours. Authorized by Universitat Autònoma de Barcelona.",
-    certificateUrl: "https://coursera.org/verify/9TV6PRTVBU7I",
+    certificateUrl: "https://drive.google.com/file/d/1Pjl3K5EJaffeKdRLEQV1gvmpKWWGEI5l/view?usp=drive_link",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ export const certifications = [
     institution: "IBM (Coursera)",
     date: "Sep 7, 2024",
     details: "Online non-credit course authorized by IBM. Covers hardware and operating systems fundamentals.",
-    certificateUrl: "https://coursera.org/verify/UZG6DWWZPYB1",
+    certificateUrl: "https://drive.google.com/file/d/1wz5JzoKpCs_Q7GeKKayVzclZnJD7jM3I/view?usp=drive_link",
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ export const certifications = [
     institution: "Google (Coursera)",
     date: "Nov 5, 2024",
     details: "Online course on computer networking authorized by Google. Covers the fundamentals of networking.",
-    certificateUrl: "https://coursera.org/verify/KJ5N8F4Y8PKB",
+    certificateUrl: "https://drive.google.com/file/d/1FaNE4uYblfhbYhWbL0iuI1qD1zXi38Bq/view?usp=drive_link",
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ export const certifications = [
     institution: "University of Colorado System (Coursera)",
     date: "Nov 19, 2024",
     details: "Online course on TCP/IP and advanced networking topics. Authorized by University of Colorado System.",
-    certificateUrl: "https://coursera.org/verify/4I50T6DS3T8L",
+    certificateUrl: "https://drive.google.com/file/d/1fADVCe7hGfmRBMyqsOIVfq7AGpnWD-4Y/view?usp=drive_link",
   },
   {
     id: 7,
@@ -53,7 +53,7 @@ export const certifications = [
     institution: "University of Colorado System (Coursera)",
     date: "Nov 19, 2024",
     details: "Online course on packet switching networks and algorithms. Authorized by University of Colorado System.",
-    certificateUrl: "https://coursera.org/verify/BZZG5GTJ8VRQ",
+    certificateUrl: "https://drive.google.com/file/d/1YTeUyreVGX-Dxe0q7YMFsYht1m01mhwd/view?usp=drive_link",
   },
   {
     id: 8,
@@ -61,7 +61,7 @@ export const certifications = [
     institution: "University of Colorado System (Coursera)",
     date: "Nov 4, 2024",
     details: "Online course on peer-to-peer protocols and LANs. Authorized by University of Colorado System.",
-    certificateUrl: "https://coursera.org/verify/6QTAA0EBEOOD",
+    certificateUrl: "https://drive.google.com/file/d/1XV1-c5nWpe5d_Lre3EG0ViYjxpPmvLQC/view?usp=drive_link",
   },
   {
     id: 9,
@@ -69,7 +69,7 @@ export const certifications = [
     institution: "University of Colorado System (Coursera)",
     date: "Sep 22, 2024",
     details: "Online course on fundamentals of network communication. Authorized by University of Colorado System.",
-    certificateUrl: "https://coursera.org/verify/LT5W7F2BOJ7M",
+    certificateUrl: "https://drive.google.com/file/d/1B_UP25CF2DFHbRz_fluKqFS3oMz7jiSk/view?usp=drive_link",
   },
   {
     id: 10,
@@ -77,7 +77,7 @@ export const certifications = [
     institution: "Neocolab (iamneo) · LPU (Lovely Professional University)",
     date: "—",
     details: "C language certificate from Neocolab (iamneo) platform through college LPU. Covers fundamentals, data structures, algorithms, memory & pointers, and debugging.",
-    certificateUrl: "https://www.linkedin.com/posts/anandsavarn_cprogramming-programmingcertificate-linkedinlearning-activity-7288484458804977664-D_33",
+    certificateUrl: "https://drive.google.com/file/d/1mKdOT1yHYkcJZDDZySPkDKVoWNPfxl27/view?usp=drive_link",
     certificateImage: "/certificates/computer-programing.jpg",
   },
   {
@@ -86,7 +86,7 @@ export const certifications = [
     institution: "Neocolab (iamneo) · LPU (Lovely Professional University)",
     date: "—",
     details: "Comprehensive OOP course covering encapsulation, inheritance, polymorphism, and abstraction. Applied in C++ for scalable and maintainable software design.",
-    certificateUrl: "https://www.linkedin.com/posts/anandsavarn_oop-neocolab-programmingskills-activity-7288481102439059456-438b",
+    certificateUrl: "https://drive.google.com/file/d/1ppQXOkDDfNr8TvyaBw7qNkKY4t1GGDH0/view?usp=drive_link",
   },
   {
     id: 12,
@@ -94,7 +94,7 @@ export const certifications = [
     institution: "Neocolab (iamneo) · LPU (Lovely Professional University)",
     date: "—",
     details: "Structured training in arrays, linked lists, stacks, queues, trees, graphs, searching and sorting algorithms, dynamic programming, and recursion for efficient problem-solving.",
-    certificateUrl: "https://www.linkedin.com/posts/anandsavarn_dsa-activity-7288483218331185152-x1XW",
+    certificateUrl: "https://drive.google.com/file/d/1KOZD2ndPgFTLJrYv-tf66E0xufSWgTsw/view?usp=drive_link",
   },
   {
     id: 13,
@@ -102,14 +102,14 @@ export const certifications = [
     institution: "Neocolab (iamneo) · LPU (Lovely Professional University)",
     date: "—",
     details: "Core Java certification covering object-oriented programming, control structures, and data types. Strengthens foundational skills in enterprise and application development.",
-    certificateUrl: "https://www.linkedin.com/posts/anandsavarn_javaprogramming-neocolab-certificateachieved-activity-7341538448761114624--9L2",
+    certificateUrl: "https://drive.google.com/file/d/1Tj2W2c8HLZhrX86cvAgYLNiqVXQnuhX0/view?usp=drive_link",
   },
   {
     id: 14,
     name: "ChatGPT-4 Prompt Engineering: ChatGPT, Generative AI & LLM",
-    institution: "Onwingspan (verify.onwingspan.com)",
+    institution: "Onwingspan",
     date: "Sep 30, 2025",
     details: "Successfully completed the course on ChatGPT-4, Prompt Engineering, Generative AI & Large Language Models.",
-    certificateUrl: "/certificates/gpt4.pdf",
+    certificateUrl: "https://drive.google.com/file/d/10qUWgl3ok1ZSzElv5v1-27cTTLykRM_R/view?usp=drive_link",
   },
 ];
