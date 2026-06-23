@@ -42,7 +42,7 @@ export const projects = [
     github: "https://github.com/anandsavarn/Electric-Vehicle-Population-Data",
     live: "",
     language: "Python",
-    image: "",
+    image: "/projects/ChatGPT Image Jun 24, 2026, 12_12_26 AM.png",
     tags: ["Python", "Pandas", "Matplotlib", "Seaborn", "Data Cleaning"],
   },
     {
