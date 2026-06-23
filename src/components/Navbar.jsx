@@ -77,7 +77,7 @@ export default function Navbar() {
           <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-code-green/20 to-code-accent/20 flex items-center justify-center border border-white/10 group-hover:border-code-green/50 transition-all">
             <Terminal className="text-code-green" size={20} />
           </div>
-          <span className="hidden sm:inline">ANAND<span className="text-code-green">.DEV</span></span>
+          <span className="hidden sm:inline">ANAND<span className="text-code-green"> SAVARN</span></span>
         </motion.a>
 
         {/* Desktop Nav */}
