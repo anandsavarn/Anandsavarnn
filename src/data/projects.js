@@ -51,7 +51,7 @@ export const projects = [
     detailed: "A modern and responsive portfolio website built to showcase my projects, technical skills, certifications, achievements, and contact information. Designed with a clean UI and optimized for performance across all devices.",
     github: "https://github.com/anandsavarn/Anandsavarnn",
     live: "https://anandsavarn.vercel.app",
-    image: "https://drive.google.com/file/d/1SCy8YEWVe4Wux13dzvWuy6N6DLWYsDIy/view?usp=drive_link",
+    image: "/projects/ChatGPT Image Jun 23, 2026, 04_51_02 PM.png",
     language: "Web Developmen",
     tags: ["React", "Next.js", "Tailwind CSS", "Portfolio", "Responsive Design"],
   }
