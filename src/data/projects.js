@@ -42,6 +42,7 @@ export const projects = [
     github: "https://github.com/anandsavarn/Electric-Vehicle-Population-Data",
     live: "",
     language: "Python",
+    image: "",
     tags: ["Python", "Pandas", "Matplotlib", "Seaborn", "Data Cleaning"],
   },
     {
