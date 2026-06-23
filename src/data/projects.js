@@ -45,7 +45,7 @@ export const projects = [
     tags: ["Python", "Pandas", "Matplotlib", "Seaborn", "Data Cleaning"],
   },
     {
-    id: 2,
+    id: 5,
     title: "Portfolio",
     description: "Personal portfolio website showcasing projects, skills, and achievements.",
     detailed: "A modern and responsive portfolio website built to showcase my projects, technical skills, certifications, achievements, and contact information. Designed with a clean UI and optimized for performance across all devices.",
