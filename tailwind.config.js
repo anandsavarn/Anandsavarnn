@@ -13,8 +13,8 @@ export default {
       colors: {
         foreground: '#e6edf3',
         code: {
-          bg: '#5b5f64',
-          surface: '#161b22',
+          bg: '#2d3138',
+          surface: '#01390f',
           border: '#30363d',
           accent: '#58a6ff',
           green: '#3fb950',
