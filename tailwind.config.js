@@ -13,9 +13,9 @@ export default {
       colors: {
         foreground: '#e6edf3',
         code: {
-          bg: '#2b3342',
-          surface: '#374256',
-          border: '#4f5e78',
+          bg: '#0a0c10',
+          surface: '#11141b',
+          border: '#202532',
           accent: '#58a6ff',
           green: '#3fb950',
           amber: '#d29922',
