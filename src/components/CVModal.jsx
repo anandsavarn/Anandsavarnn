@@ -20,10 +20,10 @@ export default function CVModal({ isOpen, onClose }) {
           initial={{ opacity: 0, scale: 0.95, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95, y: 20 }}
-          className="relative w-full max-w-4xl max-h-[90vh] bg-[#0a0a0a] border border-white/10 rounded-2xl shadow-2xl overflow-y-auto z-10 custom-scrollbar"
+          className="relative w-full max-w-4xl max-h-[90vh] bg-code-surface border border-white/10 rounded-2xl shadow-2xl overflow-y-auto z-10 custom-scrollbar"
         >
           {/* Header Actions */}
-          <div className="sticky top-0 right-0 p-4 flex justify-between items-center bg-[#0a0a0a]/80 backdrop-blur-md z-20 border-b border-white/5">
+          <div className="sticky top-0 right-0 p-4 flex justify-between items-center bg-code-surface/80 backdrop-blur-md z-20 border-b border-white/5">
             <div className="flex gap-2">
                <button 
                 onClick={() => window.print()} 
@@ -72,8 +72,8 @@ export default function CVModal({ isOpen, onClose }) {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full text-gray-300">
                 <div><span className="font-bold text-white">Languages:</span> Python, C, C++, Java, Kotlin, XML, SQL</div>
                 <div><span className="font-bold text-white">Libraries/Frameworks:</span> NumPy, Pandas, Matplotlib, Scikit-Learn, TensorFlow, HTML, CSS, JavaScript</div>
-                <div><span className="font-bold text-white">Tools/Platforms:</span> Excel, Power BI, Android SDK, Git, GitHub</div>
-                <div><span className="font-bold text-white">Soft Skills:</span> Problem-Solving, Team Collaboration, Time Management, Adaptability</div>
+                <div><span className="font-bold text-white">Tools/Platforms:</span> Excel, Power BI, Android SDK, Big Data, Git, GitHub</div>
+                <div><span className="font-bold text-white">Soft Skills:</span> Problem-Solving Ability, Team Collaboration, Time Management, Adaptability</div>
               </div>
             </div>
 
@@ -110,7 +110,7 @@ export default function CVModal({ isOpen, onClose }) {
                     title: "Predictor – AI-Powered Financial Analytics platform",
                     date: "Oct 2025 - Apr 2026",
                     bullets: [
-                      "Deployed a full-stack Flask-based trading platform with LSTM-powered stock prediction, live market news, TradingView ticker, career & login system, and integrated trading resources.",
+                      "Deployed a full-stack Flask-based trading platform with LSTM-powered stock prediction, live market news, TradingView ticker, career & login system, and integrated trading resources (strategies, books, broker directory).",
                       "Developed an AI-driven stock prediction system using Keras/TensorFlow with EMA-based visualizations and real-time data from Yahoo Finance; enhanced user experience with chatbot, dark/light UI, and downloadable analytics."
                     ],
                     tools: "Python, Flask, TensorFlow, Keras, LSTM, NLP, Pandas, NumPy, Matplotlib, Bootstrap 5, JavaScript"
@@ -166,7 +166,7 @@ export default function CVModal({ isOpen, onClose }) {
                 </div>
                 <p className="text-gray-400 text-sm font-bold mb-3 font-mono">NurtureNest – Android Parenting & Wellness App</p>
                 <p className="text-gray-300 leading-relaxed text-sm mb-3">
-                  Built Nurturenest, an interactive android app demonstrating strong command of Kotlin, XML, Android SDK, and Material Components. Designed dynamic layouts, event handling with Snackbars, Dialogs, Intents, and Alarm Manager-based notifications. Managed real-time UI updates and packaged APK for play store deployment.
+                  Built Nurturenest, an interactive android app demonstrating strong command of Kotlin, XML, Android SDK, and Material Components, offering personalized parenting logs and daily tips. Designed dynamic layouts, event handling with Snackbars, Dialogs, Intents, and Alarm Manager-based notifications. Managed internal/external storage, CRUD operations, real-time UI updates and packaged APK for play store deployment.
                 </p>
                 <div className="text-xs font-mono text-gray-400">
                   <span className="text-code-green">Tools:</span> Kotlin, XML, Android SDK, Material Components
