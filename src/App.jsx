@@ -23,13 +23,13 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#050505] selection:bg-emerald-500 selection:text-[#050505] overflow-x-hidden text-gray-200">
+    <div className="min-h-screen bg-code-bg selection:bg-emerald-500 selection:text-code-bg overflow-x-hidden text-gray-200">
       <AnimatePresence>
         {loading && (
           <motion.div 
             exit={{ opacity: 0, y: "-100%" }}
             transition={{ duration: 0.6, ease: [0.76, 0, 0.24, 1] }}
-            className="fixed inset-0 z-[1000] bg-[#050505] flex flex-col items-center justify-center font-mono text-emerald-400 text-3xl"
+            className="fixed inset-0 z-[1000] bg-code-bg flex flex-col items-center justify-center font-mono text-emerald-400 text-3xl"
           >
             <div className="flex flex-col items-center gap-6">
               <div className="relative w-20 h-20 flex items-center justify-center mb-4">
