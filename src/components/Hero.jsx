@@ -15,10 +15,10 @@ export default function Hero() {
   return (
     <section 
       id="home" 
-      className="relative min-h-[100vh] flex flex-col justify-center pt-24 pb-16 overflow-hidden bg-[#050505]"
+      className="relative min-h-[100vh] flex flex-col justify-center pt-24 pb-16 overflow-hidden bg-code-bg"
     >
       {/* Optimized Background */}
-      <div className="absolute top-0 right-0 w-full h-[500px] bg-gradient-to-br from-emerald-900/20 via-[#050505] to-[#050505] -z-20" />
+      <div className="absolute top-0 right-0 w-full h-[500px] bg-gradient-to-br from-emerald-900/20 via-code-bg to-code-bg -z-20" />
       
       {/* Dynamic Grid Overlay (Static) */}
       <div className="absolute inset-0 bg-grid-pattern opacity-[0.03] -z-10" />
@@ -153,7 +153,7 @@ export default function Hero() {
                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                  <BrainCircuit className="text-cyan-400 mb-1 sm:mb-2 w-5 h-5 sm:w-6 sm:h-6" />
                  <div>
-                   <div className="text-lg sm:text-2xl font-bold text-white tracking-tight">7+</div>
+                   <div className="text-lg sm:text-2xl font-bold text-white tracking-tight">5+</div>
                    <div className="text-[9px] sm:text-[10px] text-gray-400 font-mono uppercase leading-tight sm:leading-normal">ML Models</div>
                  </div>
               </motion.div>
@@ -167,7 +167,7 @@ export default function Hero() {
                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                  <Code2 className="text-blue-400 mb-1 sm:mb-2 w-5 h-5 sm:w-6 sm:h-6" />
                  <div>
-                   <div className="text-lg sm:text-2xl font-bold text-white tracking-tight">275+</div>
+                   <div className="text-lg sm:text-2xl font-bold text-white tracking-tight">250+</div>
                    <div className="text-[9px] sm:text-[10px] text-gray-400 font-mono uppercase leading-tight sm:leading-normal">LeetCode</div>
                  </div>
               </motion.div>
