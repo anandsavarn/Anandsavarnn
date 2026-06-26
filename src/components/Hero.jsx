@@ -70,7 +70,7 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-lg md:text-2xl text-gray-400 max-w-xl font-light leading-relaxed"
             >
-              I'm <strong className="text-white font-medium">Anand Kumar</strong> — CSE student specializing in <span className="text-emerald-400 font-medium">Data Science</span> at LPU, aspiring to build impactful solutions as a <span className="text-cyan-400 font-medium">Data Analyst & Data Engineer</span>.
+              I'm <strong className="text-white font-medium">Anand Kumar</strong> — CSE specializing in <span className="text-emerald-400 font-medium">Data Science</span> at LPU, aspiring to build impactful solutions as a <span className="text-cyan-400 font-medium">Data Analyst & Data Engineer</span>.
             </motion.p>
 
             <motion.div 
@@ -139,7 +139,7 @@ export default function Hero() {
                  <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                  <Database className="text-emerald-400 mb-1 sm:mb-2 w-5 h-5 sm:w-6 sm:h-6" />
                  <div>
-                   <div className="text-lg sm:text-2xl font-bold text-white tracking-tight">10+</div>
+                   <div className="text-lg sm:text-2xl font-bold text-white tracking-tight">15+</div>
                    <div className="text-[9px] sm:text-[10px] text-gray-400 font-mono uppercase leading-tight sm:leading-normal">Projects</div>
                  </div>
               </motion.div>
@@ -153,7 +153,7 @@ export default function Hero() {
                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                  <BrainCircuit className="text-cyan-400 mb-1 sm:mb-2 w-5 h-5 sm:w-6 sm:h-6" />
                  <div>
-                   <div className="text-lg sm:text-2xl font-bold text-white tracking-tight">5+</div>
+                   <div className="text-lg sm:text-2xl font-bold text-white tracking-tight">7+</div>
                    <div className="text-[9px] sm:text-[10px] text-gray-400 font-mono uppercase leading-tight sm:leading-normal">ML Models</div>
                  </div>
               </motion.div>
@@ -167,7 +167,7 @@ export default function Hero() {
                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                  <Code2 className="text-blue-400 mb-1 sm:mb-2 w-5 h-5 sm:w-6 sm:h-6" />
                  <div>
-                   <div className="text-lg sm:text-2xl font-bold text-white tracking-tight">250+</div>
+                   <div className="text-lg sm:text-2xl font-bold text-white tracking-tight">350+</div>
                    <div className="text-[9px] sm:text-[10px] text-gray-400 font-mono uppercase leading-tight sm:leading-normal">LeetCode</div>
                  </div>
               </motion.div>
