@@ -153,7 +153,7 @@ export default function Hero() {
                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                  <BrainCircuit className="text-cyan-400 mb-1 sm:mb-2 w-5 h-5 sm:w-6 sm:h-6" />
                  <div>
-                   <div className="text-lg sm:text-2xl font-bold text-white tracking-tight">7+</div>
+                   <div className="text-lg sm:text-2xl font-bold text-white tracking-tight">20+</div>
                    <div className="text-[9px] sm:text-[10px] text-gray-400 font-mono uppercase leading-tight sm:leading-normal">ML Models</div>
                  </div>
               </motion.div>
