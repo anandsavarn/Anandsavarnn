@@ -1,4 +1,4 @@
-# Anand Kumar — CSE Portfolio 
+# Anand Kumar — CSE Portfolio  
 
 Professional React portfolio (CSE / coding style) with three main sections:
 
