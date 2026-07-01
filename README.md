@@ -1,5 +1,5 @@
 <div align="center">
-
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0a,50:003300,100:006600&height=210&section=header&text=ANAND%20KUMAR%20&fontSize=30&fontColor=00ff88&fontAlignY=36&desc=A%20modern,%20%7C%20developer-first%20portfolio%20built%20with%20React&descAlignY=56&descColor=88ffcc&animation=fadeIn" width="100%"/>
 # 👨‍💻 Anand Kumar — CSE Portfolio
 
 ### A modern, developer-first portfolio built with React
@@ -132,5 +132,6 @@ This project is open source and available under the [MIT License](LICENSE).
 <div align="center">
 
 **Built and maintained by Anand Kumar** — feel free to fork and adapt for your own portfolio.
+<img src="https://capsule-render.vercel.app/api?type=waving&color=400:00ff88,800:003300,800:0a0a0a&height=120&section=footer" width="100%"/>
 
 </div>
