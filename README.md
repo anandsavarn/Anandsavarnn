@@ -3,7 +3,7 @@
 
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-Build-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
-[![License](https://img.shields.io/badge/License-MIT-00FF41?style=for-the-badge)](#license)
+[![License](https://img.shields.io/badge/License-00FF41?style=for-the-badge)](#license)
 [![Deploy](https://img.shields.io/badge/Deployed-Live-success?style=for-the-badge)](#)
 
 *A clean, code-focused personal site — no fluff, just who I am, where I code, and what I've built.*
@@ -122,7 +122,7 @@ The optimized, production-ready build will be output to the `dist/` folder.
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the [License](LICENSE).
 
 ---
 
