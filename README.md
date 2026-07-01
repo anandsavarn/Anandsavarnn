@@ -1,5 +1,6 @@
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0a,50:003300,100:006600&height=210&section=header&text=ANAND%20KUMAR%20&fontSize=30&fontColor=00ff88&fontAlignY=36&desc=A%20modern,%20%7C%20developer-first%20portfolio%20built%20with%20React&descAlignY=56&descColor=88ffcc&animation=fadeIn" width="100%"/>
+
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-Build-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![License](https://img.shields.io/badge/License-MIT-00FF41?style=for-the-badge)](#license)
