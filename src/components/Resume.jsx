@@ -63,7 +63,7 @@ export default function Resume() {
                 
                 <div className="space-y-2">
                   <h3 className="text-2xl font-bold text-white">Anand Kumar</h3>
-                  <p className="text-gray-500 font-mono text-sm uppercase tracking-widest">Updated April 2026</p>
+                  <p className="text-gray-500 font-mono text-sm uppercase tracking-widest">Updated July 2026</p>
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4 w-full">
