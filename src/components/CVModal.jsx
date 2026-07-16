@@ -187,7 +187,7 @@ export default function CVModal({ isOpen, onClose }) {
                     <p className="text-gray-400 text-sm mb-1">B.Tech – Computer Science and Engineering</p>
                     <div className="flex justify-between items-center text-xs font-mono mt-2">
                       <span className="text-code-amber">Since Aug 2023</span>
-                      <span className="px-2 py-1 bg-code-green/10 text-code-green rounded">CGPA: 7.3</span>
+                      <span className="px-2 py-1 bg-code-green/10 text-code-green rounded">CGPA: 7.36</span>
                     </div>
                   </div>
                   <div className="relative pl-6 border-l-2 border-white/10 hover:border-code-green transition-colors">
